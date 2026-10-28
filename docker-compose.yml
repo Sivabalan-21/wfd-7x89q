@@ -1,0 +1,32 @@
+services:
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    container_name: wind-forecast-backend
+    ports:
+      - "8000:8000"
+    environment:
+      - CACHE_DIR=/app/data_cache
+      - DEFAULT_CUTOFF_HOUR=11
+      - DEFAULT_CUTOFF_MINUTE=0
+      - ALLOWED_ORIGINS=*
+    healthcheck:
+      test: ["CMD-SHELL", "curl -f http://localhost:8000/api/health || exit 1"]
+      interval: 15s
+      timeout: 5s
+      retries: 3
+      start_period: 5s
+    restart: unless-stopped
+
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    container_name: wind-forecast-frontend
+    ports:
+      - "3000:80"
+    depends_on:
+      backend:
+        condition: service_healthy
+    restart: unless-stopped
