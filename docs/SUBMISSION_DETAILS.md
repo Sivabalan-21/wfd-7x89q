@@ -16,9 +16,9 @@ https://github.com/Sivabalan-21/wfd-7x89q
 
 ### Field: Deployed Application URL
 ```text
-https://wfd-7x89q.vercel.app
+https://sivabalan-21.github.io/wfd-7x89q/
 ```
-*(Alternative/Direct link: http://localhost:3000 locally via Docker Compose).*
+*(Live public deployment on GitHub Pages with full interactive charts, publication explorer, accuracy metrics, and local Docker Compose support).*
 
 ---
 
