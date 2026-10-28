@@ -22,9 +22,11 @@ async function loadFallbackData(): Promise<[ActualRecord[], ForecastRecord[]]> {
     return [fallbackActuals, fallbackForecasts];
   }
   try {
+    const rawBase = (import.meta as any).env?.BASE_URL || './';
+    const cleanBase = rawBase.endsWith('/') ? rawBase : `${rawBase}/`;
     const [actRes, fcRes] = await Promise.all([
-      fetch('/data/actuals_wind_2026-01-01_2026-01-31.json'),
-      fetch('/data/windfor_2025-12-30_2026-02-01.json'),
+      fetch(`${cleanBase}data/actuals_wind_2026-01-01_2026-01-31.json`),
+      fetch(`${cleanBase}data/windfor_2025-12-30_2026-02-01.json`),
     ]);
     if (actRes.ok && fcRes.ok) {
       fallbackActuals = await actRes.json();
