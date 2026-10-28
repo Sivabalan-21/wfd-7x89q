@@ -1,6 +1,7 @@
 # Wind Forecast Decision Support Platform (UK Day-Ahead Power Trading)
 
 [![CI Quality & Verification Suite](https://github.com/Sivabalan-21/wfd-7x89q/actions/workflows/ci.yml/badge.svg)](https://github.com/Sivabalan-21/wfd-7x89q/actions)
+[![Deploy Frontend to GitHub Pages](https://github.com/Sivabalan-21/wfd-7x89q/actions/workflows/deploy-pages.yml/badge.svg)](https://github.com/Sivabalan-21/wfd-7x89q/actions/workflows/deploy-pages.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 [![Python: 3.13](https://img.shields.io/badge/Python-3.13-3776AB?logo=python&logoColor=white)](https://www.python.org/)
 [![FastAPI](https://img.shields.io/badge/FastAPI-0.110+-009688?logo=fastapi&logoColor=white)](https://fastapi.tiangolo.com/)
@@ -12,14 +13,14 @@ An institutional-grade energy analytics and decision support platform engineered
 
 ---
 
-## Deliverables & Quick Links
+## Deliverables & Verified Links
 
-- **Public GitHub Repository**: `https://github.com/Sivabalan-21/wfd-7x89q` *(Anonymous repository name)*
-- **Live Deployed Application**: `https://wfd-7x89q.vercel.app`
-- **Backend API & Swagger Documentation**: `https://wfd-7x89q-api.onrender.com/docs`
-- **Backend Health Check**: `https://wfd-7x89q-api.onrender.com/api/health`
-- **Demonstration Video**: `docs/DEMO_SCRIPT.md` *(10-minute presentation & technical review script ready for recording)*
-- **Submission Form Formatted Responses**: `docs/SUBMISSION_DETAILS.md`
+- **Public GitHub Repository**: [https://github.com/Sivabalan-21/wfd-7x89q](https://github.com/Sivabalan-21/wfd-7x89q) *(Anonymous repository name `wfd-7x89q`)*
+- **Live Deployed Application**: [https://sivabalan-21.github.io/wfd-7x89q/](https://sivabalan-21.github.io/wfd-7x89q/) *(Accessible publicly in incognito browser)*
+- **Backend API & Swagger Documentation**: `http://localhost:8000/docs` *(or Docker Compose port 8000)*
+- **Backend Health Check**: `http://localhost:8000/api/health`
+- **Demonstration Video Guide**: [`docs/DEMO_SCRIPT.md`](docs/DEMO_SCRIPT.md) *(Exact 10-minute client pitch & technical review script)*
+- **Submission Form Formatted Details**: [`docs/SUBMISSION_DETAILS.md`](docs/SUBMISSION_DETAILS.md)
 
 ---
 
